@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstraptheme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Asset' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Asset' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<style>
+button{
+  color:white;
+  background:#000;
+}
+.row-header{
+  margin:0px auto;
+  padding:0px auto;
+}
+.row-content{
+  margin:0px auto;
+  padding:50px 0px 50px 0px;
+  border-bottom:1px ridge;
+  min-height:400px;
+}
+.footer{
+  background-color:#9933CC;
+  margin:0px auto;
+  padding:20px 0px 20px 0px;
+}
+.jumbotron{
+  padding:70px 30px 70px 30px;
+  margin:0px auto;
+  background:#9933CC;
+  color:floralwhite;
+}
+.address{
+font-size:80%;
+margin:0px;    
+color:0f0f0f;
+}
+
+
+.icon-pack4{
+   background-color:; 
+   padding:25px 0; 
+}
+.icon-pack4 ul {
+    display:table;
+    table-layout:fixed;    
+}
+
+.icon-pack4 ul li{
+   list-style-type:none;  
+   padding:5px;   
+   display:table-cell;  
+   text-align:center; 
+}
+
+.icon-pack4 ul li a{
+    display:block;
+    position:relative;
+    width:60px;
+    height:60px;
+    background-color:#f1f1f1;
+    text-align:center;
+    border-radius:50%;  
+    padding:6px;  
+    box-sizing:border-box;
+    text-decoration:none;
+    box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    -moz-box-shadow:0 10px 15px rgba(0,0,0,0.3);  
+    -o-box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    background:-webkit-linear-gradient(0deg,#ccc,#fff);  
+     background:-moz-linear-gradient(0deg,#ccc,#fff);  
+     background:-o-linear-gradient(0deg,#ccc,#fff); 
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack4 ul li a:hover{
+    box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -webkit-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -moz-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -o-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    cursor:pointer;
+}
+.icon-pack4 ul li a .fa{
+    width:100%;
+    height:100%;
+    display:block;
+    border-radius:50%;
+    line-height:calc(60px - 12px);
+    font-size:30px;
+    background:-webkit-linear-gradient(0deg,#ccc,#fff);  
+    background:-moz-linear-gradient(0deg,#ccc,#fff);  
+    background:-o-linear-gradient(0deg,#ccc,#fff);  
+    color:#262626;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack4 ul li:nth-child(1) a:hover .fa{
+    color:#3b5999;
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(2) a:hover .fa{
+    color:#dd4b39;
+   background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(3) a:hover .fa{
+    color:#e4405f;
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(4) a:hover .fa{
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+    color:#55acee;
+}
+   .icon-pack4 ul li:nth-child(5) a:hover .fa{
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+    color:#007bb5;
+}   
+   
+   
+
+ 
+.slider {
+  width: 1334px;
+  margin: 2em auto;
+  
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.slide {
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 3s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+  opacity: 1;
+}
+
+body{
+  background:tomato;
+  font: 300 18px/18px Roboto
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:;
+    font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: px;
+    background-color:white;
+    top: 0;
+    bottom: 0;
+    left: 60%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: -37px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 5;
+    background:black;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 30%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+    background:black;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    background:#383c55;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 1000px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+.icon-pack2{
+   background-color:;   
+   padding:25px 0;   
+}
+
+.icon-pack2 ul li{
+   list-style-type:none;  
+   padding:8px;
+   display:table-cell ;
+   transform:scale(0.8);  
+   -webkit-transform:scale(0.8);  
+   -moz-transform:scale(0.8);  
+}
+.icon-pack2 ul {
+    display:table;    
+    table-layout:fixed;
+}
+
+.icon-pack2 ul li a .fa {
+    font-size:30px;
+    color:#262626;
+    line-height:45px;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+   
+} 
+.icon-pack2 ul li a {
+    position:relative;
+    margin:0 5px;
+    display:block;
+    width:45px;
+    height:45px; 
+    border-radius:2px 4px 2px 0px;
+    background-color:#eee;
+    text-align:center;
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -webkit-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -moz-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -o-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -o-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+    
+}
+.icon-pack2 ul li a:before{
+    content:"";
+    position:absolute;
+    top:5px;
+    left:-10px;
+    height:100%;
+    width:10px;
+    border-radius:2px 2px 0px 0px;
+    background-color:#b1b1b1;
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewY(-45deg);
+    -moz-transform:rotate(0deg) skewY(-45deg);
+    -o-transform:rotate(0deg) skewY(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack2 ul li a:after{
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    right:5px;
+    height:10px;
+    width:100%;
+    border-radius:2px 2px 2px 0px;
+    background-color:#b1b1b1;
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewX(-45deg);
+    -moz-transform:rotate(0deg) skewX(-45deg);
+    -o-transform:rotate(0deg) skewX(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;  
+}
+
+.icon-pack2 ul li a:hover{
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -webkit-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -moz-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -o-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -moz-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -o-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+
+.icon-pack2 ul li:hover .fa{color:#fff;}
+.icon-pack2 ul li:hover:nth-child(1) a{
+     background-color:#3b5999;}
+.icon-pack2 ul li:hover:nth-child(2) a{
+    background:#dd4b39;}
+.icon-pack2 ul li:hover:nth-child(3) a{
+    background:-webkit-radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(circle farthest-corner at 0 140%, #fec564, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), -webkit-linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); }
+.icon-pack2 ul li:hover:nth-child(4) a{
+    background-color:#55acee;}
+.icon-pack2 ul li:hover:nth-child(5) a{
+    background-color:#007bb5;}    
+
+.icon-pack2 ul li:hover:nth-child(1) a:before{
+     background-color:#2e4a86;}
+.icon-pack2 ul li:hover:nth-child(2) a:before{
+    background:#c13929   }
+.icon-pack2 ul li:hover:nth-child(3) a:before{
+    background-color:#d02d4c;}
+.icon-pack2 ul li:hover:nth-child(4) a:before{
+    background-color:#4184b7;}
+.icon-pack2 ul li:hover:nth-child(5) a:before{
+    background-color:#125688;}
+        
+.icon-pack2 ul li:hover:nth-child(1) a:after{
+     background-color:#4a69ad;}
+.icon-pack2 ul li:hover:nth-child(2) a:after{
+    background:#e8432f  }
+.icon-pack2 ul li:hover:nth-child(3) a:after{
+    background-color:#f1395c;}
+.icon-pack2 ul li:hover:nth-child(4) a:after{
+    background-color:#4d9bde;}
+.icon-pack2 ul li:hover:nth-child(5) a:after{
+    background-color:#55acee;} 
+
+</style>
+</head>
+<body>
+<audio id="beep-one" style="display:none;" controls="controls" preload="auto">
+        <source src="atariy.mp3"></source>
+        <source src="rajasthan.mp3"></source>
+        Your browser isn't invited for super fun time.
+      </audio>
+<a id="rimshot-hover-sound" href="#">About</a>
+
+
+    <script>
+</script>
+<script type="text/javascript">var beepOne = $("#beep-one")[0];
+$("#rimshot-hover-sound")
+  .mouseenter(function() {
+    beepOne.play();
+  });
+
+
+
+
+
+var rimShotAudio = document.getElementById("beep-one"); 
+
+function playRim() { 
+    rimShotAudio.play(); 
+} 
+item.addEventListener('mouseover', rimShotAudio.playRim, false);
+</script>
+
+
+<script type="text/javascript">
+
+// PLAYER VARIABLES
+
+var mp3snd = "cc.mp3";
+
+document.write('<audio autoplay="autoplay">');
+document.write('<source src="'+mp3snd+'" type="audio/mpeg">');
+document.write('<!--[if lt IE 9]>');
+document.write('<bgsound src="'+mp3snd+'" loop="1">');
+document.write('<![endif]-->');
+document.write('</audio>');
+
+</script>
+<br>
+<!-- END SOUND CODE V4.1a -->
+
+</audio>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark ">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html"><h1 style="font-family: 'Asset'; font-size: 22px;"><h1 style="font-family: 'Asset'; font-size: 22px;">RAJASTHAN <br>TOURISM</h1><img src="6.jpg" class="rounded-circle" height="70" width="70"></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+       <div class="icon-pack4">
+  <ul>
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><span class="fa fa-home fa-bg" aria-hidden="true"></span>home</a></li>
+      </li>
+      <br>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html"><span class="fa fa-info fa-lg" aria-hidden="true"></span>About Us</a></li>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="media.html"><span class="fa fa-list fa-lg" aria-hidden="true"></span>Media</a></li>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="online.html"><span class="fa fa-address-card fa-lg" aria-hidden="true"></span>Online Booking</a></li>
+      </li>
+      
+      
+<div class="span3" id="contacts-footer">
+                  <div id="block-gtranslate-gtranslate" class="block block-gtranslate">
+
+    
+  <div class="content">
+    <div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en',layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false,includedLanguages: 'en,hi,bn,bh,ar,zh-CN,da ,fr,gu,ja,kn,ko,ml,mr,ne,pa,te'}, 'google_translate_element');
+  }</script><script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  </div>
+</div>
+              </div>
+    </ul>
+  </div>
+
+    </ul>
+  </div> 
+</nav>
+<div class="slider" id="main-slider"><!-- outermost container element -->
+  <div class="slider-wrapper"><!-- innermost wrapper element -->
+    <img src="2.jpg" alt="First" class="slide"/><!-- slides -->
+    <img src="india.jpg" alt="Second" class="slide"/>
+    <img src="10.jpg" alt="Third" class="slide" />
+    <img src="how.jpg" alt="Fourth" class="slide" />
+    <img src="4.jpg" alt="Fifth" class="slide" />
+  </div>
+</div>  
+    <script type="text/javascript">(function() {
+  
+  function Slideshow( element ) {
+    this.el = document.querySelector( element );
+    this.init();
+  }
+  
+  Slideshow.prototype = {
+    init: function() {
+      this.wrapper = this.el.querySelector( ".slider-wrapper" );
+      this.slides = this.el.querySelectorAll( ".slide" );
+      this.previous = this.el.querySelector( ".slider-previous" );
+      this.next = this.el.querySelector( ".slider-next" );
+      this.index = 0;
+      this.total = this.slides.length;
+      this.timer = null;
+      
+      this.action();
+      this.stopStart(); 
+    },
+    _slideTo: function( slide ) {
+      var currentSlide = this.slides[slide];
+      currentSlide.style.opacity = 1;
+      
+      for( var i = 0; i < this.slides.length; i++ ) {
+        var slide = this.slides[i];
+        if( slide !== currentSlide ) {
+          slide.style.opacity = 0;
+        }
+      }
+    },
+    action: function() {
+      var self = this;
+      self.timer = setInterval(function() {
+        self.index++;
+        if( self.index == self.slides.length ) {
+          self.index = 0;
+        }
+        self._slideTo( self.index );
+        
+      }, 3000);
+    },
+    stopStart: function() {
+      var self = this;
+      self.el.addEventListener( "mouseover", function() {
+        clearInterval( self.timer );
+        self.timer = null;
+        
+      }, false);
+      self.el.addEventListener( "mouseout", function() {
+        self.action();
+        
+      }, false);
+    }
+    
+    
+  };
+  
+  document.addEventListener( "DOMContentLoaded", function() {
+    
+    var slider = new Slideshow( "#main-slider" );
+    
+  });
+  
+  
+})();
+</script>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="video.html">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<button> <p style="font-family: 'Asset'; font-size: 22px;">open</p></button></span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+  <h2 style="font-family: 'Asset';font-size: 20px;color:gold">History of Rajasthan</h2>
+       <center><img src="history.jpg" class="rounded-circle" height="300" width="300"></center>
+      <center> <h6 style="color:teal">An ancient ruin in Jaisalmer, Rajasthan.</h6></center>
+       <hr>
+       <h4 style="font-family: 'Bangers'; font-size: 28px;color:gold">Ancient History</h4>
+       <hr>
+      <p style="font-family: 'Baloo';font-size: 18px;color:black;color:black">The ancient civilised history of Rajasthan goes back to 5,000 years ago when in the present day districts of Jhunjhunu and Sikar, along with other areas of jaipur district bordering south Haryana, which formed the part of Vedic state of Brahmavarta along with districts of Mahendragarh and Rewari in Haryana, that Vedic seers started composing Vedic scriptures, which form part of Sanatan Dharma, the base of present day Hinduism. Revered Saraswati and Drishadwati rivers formed the then Brahmavarta state.</p>
+      <a href="https://en.wikipedia.org/wiki/History_of_Rajasthan"><button>Read More</button></a>
+      
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2 style="font-family: 'Asset';font-size: 20px;color:gold">Tourism in Rajasthan</h2>
+      <center><img src="city.jpg" class="rounded-circle" height="300" width="300"></center>
+      <center> <h6 style="color:teal">City Palace Udaipur, Rajasthan.</h6></center>
+      <hr>
+<h4 style="font-family: 'Bangers'; font-size: 28px;color:gold">Palaces</h4>
+<hr>
+      <p style="font-family: 'Baloo';font-size: 18px;color:black;color:black">Rajasthan is known for its historical hill forts & palaces, it is claimed as best place for tourism related to palaces.Following are some of major palaces in Rajasthan.</p>
+      <ul>
+        <li style="font-family: 'Baloo';font-size: 18px;color:black"color:white">Umaid Bhawan Palace: It is the largest Royal Palace in Rajasthan. It is also one of largest private residence in the world.</li>
+        <li style="font-family: 'Baloo';font-size: 18px;color:black">Lake Palace: It is now a luxury hotel located in Pichola Lake, Udaipur.</li>
+        <li style="font-family: 'Baloo';font-size: 18px;color:black">Hawa Mahal: It is known as "Palace of Wind" or "Palace of Breeze" because there are more than 950 Windows in the Palace.</li>
+        <li style="font-family: 'Baloo';font-size: 18px;color:black">Rambagh Palace: Formerly a Royal Palace now converted into a Heritage Hotel.</li>
+        <li style="font-family: 'Baloo';font-size: 18px;color:black">Devi Garh Palace: Formerly a palace now converted into a Heritage Hotel, In 2006, The New York Times named it as one if leading luxurious hotel in Indian subcontinent.</li>
+      </ul>
+      <a href="https://en.wikipedia.org/wiki/Tourism_in_Rajasthan"><button>Read More</button></a>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2 style="font-family: 'Asset';font-size: 20px;color:gold">Culture of Rajasthan</h2>
+      <center><img src="dance.jpg" class="rounded-circle" height="300" width="300"></center>
+      <center> <h6 style="color:teal">Rajasthani folk dance</h6></center>
+      <hr>
+      <h2 style="font-family: 'Bangers'; font-size: 28px;color:gold">Music and dance</h2>
+<hr>
+      <p style="font-family: 'Baloo';font-size: 18px;color:black;color:black">Highly cultivated classical music and dance with its own distinct style is part of the cultural tradition of Rajasthan. The music is uncomplicated and songs depict day-to-day relationships and chores, more often focused around fetching water from wells or ponds.
+
+The Ghoomar dance from Jodhpur and Kalbeliya dance of Jaisalmer have gained international recognition. Folk music is a vital part of Rajasthani culture. Kathputali, Bhopa, Chang, Teratali, Ghindar, Kachchhighori, Tejaji,parth dance etc. are the examples of the traditional Rajasthani culture. Folk songs are commonly ballads which relate heroic deeds and love stories; and religious or devotional songs known as bhajans and banis (often accompanied by musical instruments like dholak, sitar, sarangi etc.) are also sung.
+
+Kanhaiya Geet also sung in major areas of east rajasthani belt in the collectiong manner as a best source of entertainment in the rural areas.</p>
+<a href="https://en.wikipedia.org/wiki/Culture_of_Rajasthan"><button>Read More</button></a>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2 style="font-family: 'Asset';font-size: 20px;color:gold">Rajasthani people</h2>
+      <center><img src="people.jpg" class="rounded-circle" height="300" width="300"></center>
+      <center> <h6 style="color:teal">Traditional Rajasthani Attires</h6></center>
+      <hr>
+      <h2 style="font-family: 'Bangers'; font-size: 28px;color:gold">Rajasthani literature</h2>
+<hr>
+      <p style="font-family: 'Baloo';font-size: 18px;color:black;color:black">Scholars agree on the fact that during 10th-12th century, a common language was spoken in Western Rajasthan and Northern Gujarat. This language was known as Old Gujarati (1100 AD — 1500 AD) (also called Old Western Rajasthani, Gujjar Bhakha, Maru-Gurjar). The language derived its name from the Gurjars (or Gujjars), who were residing and ruling in Punjab, Rajputana, central India, and various parts of Gujarat at that time.It is said that Marwari and Gujarati has evolved from this Gurjar Bhakha later.[43] The language was used as a literary language as early as 12th century. Poet Bhoja has referred to Gaurjar Apabhramsha in 1014 AD. Formal grammar of Rajasthani was written by Jain monk and eminent scholar Hemachandra Suri in the reign of Chaulukya king Jayasimha Siddharaja. Rajasthani was recognized by the State Assembly as an official Indian language in 2004. Recognition is still pending from the government of India.</p>
+      <a href="https://en.wikipedia.org/wiki/Rajasthani_people"><button>Read More</button></a>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+       <h2 style="font-family: 'Asset';font-size: 20px;color:gold">Economy of Rajasthan</h2>
+      <center><img src="bajra.jpg" class="rounded-circle" height="300" width="300"></center>
+      <center> <h6 style="color:teal">Bajra field in Rajasthani</h6></center>
+      <hr>
+      <h2 style="font-family: 'Bangers'; font-size: 28px;color:gold">Industries</h2>
+<hr>
+      <p style="font-family: 'Baloo';font-size: 18px;color:black;color:black">Rajasthan is a MOST leading investment destination in India after Maharashtra and Gujarat because of peaceful environment, better law and order situation, excellent infrastructure, investment friendly climate and very less population density. Areas facing NCR such as Bhiwadi are now buzzing with automobile and manufacturing companies. Many of the small scale suppliers and vendors have opted to shift inside Rajasthan border from Gurgaon in Haryana because of perennial power shortage and poor infrastructure there.
+
+Rajasthan State Industrial Development and Investment Corporation (RIICO) provides excellent facilities for development. Rajasthan is now the preferred destination for IT companies and North India's largest integrated IT park is located in Jaipur and is named as Mahindra World City Jaipur covering nearly 3,000 acres (12 km2) of land. Some of the companies operating in Rajasthan include Infosys, Genpact, Wipro,Truworth, Deusche Bank, NEI, MICO, Honda Siel Cars, Coca-Cola, Gillete etc</p>
+<a href="https://en.wikipedia.org/wiki/Rajasthani_people"><button>Read More</button></a>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2 style="font-family: 'Asset';font-size: 20px;color:gold">Portal:Rajasthan</h2>
+      <center><img src="photo.jpg" class="rounded-circle" height="300" width="300"></center>
+      <center> <h6 style="color:teal">Rajasthani arts</h6></center>
+      <hr>
+      <h2 style="font-family: 'Bangers'; font-size: 28px;color:gold">THE RAJASTHAN PORTAL</h2>
+<hr>
+      <p style="font-family: 'Baloo';font-size: 18px;color:black">Rajasthan is India's largest state by area (342,239 square kilometres (132,139 sq mi) or 10.4% of India's total area). It is located on the northern side of the country, where it comprises most of the wide and inhospitable Thar Desert (also known as the "Rajasthan Desert" and "Great Indian Desert") and shares a border with the Pakistani provinces of Punjab to the northwest and Sindh to the west, along the Sutlej-Indus river valley. Elsewhere it is bordered by the other Indian states: Punjab to the north; Haryana and Uttar Pradesh to the northeast; Madhya Pradesh to the southeast; and Gujarat to the southwest.
+
+The state was formed on 30 March 1949 when Rajputana – the name adopted by the British Raj for its dependencies in the region – was merged into the Dominion of India. Its capital and largest city is Jaipur, located on the state's eastern side.</p>
+<a href="https://en.wikipedia.org/wiki/Portal:Rajasthan"><button>Read More</button></a>
+</div>
+</div>
+
+<script src="https://ajak.googleleapis.com/ajak/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+</script>
+<footer>
+      <hr>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-5 offset-1 col-sm-2">
+            <h5></h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">menu</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
+
+              
+<div class="col-6 col-sm-5">
+  <h5>/h5>
+  <address>
+    <br>
+    <i class="fa fa-phone fa-lg"></i>:77589990866<br>
+    <i class="fa fa-fax fa-lg"></i>:7479497494<br>
+    <i class="fa fa-envelope fa-lg"></i>:<a href="mayankarsingh9@gmail.com">E-mail</a><br>
+
+  </address>
+  
+</div>
+ <div class="col col-sm-4 align-self-center">
+ <div class="icon-pack2">
+  <ul>
+  <div style="text-align:center">
+                        <li><a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook  fa-lg aria-hidden="true"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+                    </div>
+                  </ul>
+                  </div>
+</div>
+<div class="row justify-content-center">
+<div class="col-auto">
+  <p>copyright 2018 Ristorante con Fusion</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+	</body>
+</html>

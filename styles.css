@@ -1,0 +1,33 @@
+body{
+	background:green;
+
+}
+h1{
+	background:red;
+}
+a:hover{
+	color:black;
+	background:white;
+}
+.greenlink:hover{
+	color:green;
+	background:gray;
+}
+@media(min-width:500px){
+	body{
+		background:red;
+	}
+}
+@media(min-width:700px){
+	body{
+		background:yellow;
+		}
+	}
+	@media(min-width:2000px){
+		body{
+			background:blue;
+		}
+	}
+	.thin_border{
+		border:1px solid black;
+	}

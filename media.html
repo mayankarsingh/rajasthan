@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstraptheme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Asset' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+    <style>.row-header{
+  margin:0px auto;
+  padding:0px auto;
+}
+.row-content{
+  margin:0px auto;
+  padding:50px 0px 50px 0px;
+  border-bottom:1px ridge;
+  min-height:400px;
+}
+.footer{
+  background-color:#9933CC;
+  margin:0px auto;
+  padding:20px 0px 20px 0px;
+}
+.jumbotron{
+  padding:70px 30px 70px 30px;
+  margin:0px auto;
+  background:#9933CC;
+  color:floralwhite;
+}
+.address{
+font-size:80%;
+margin:0px;    
+color:0f0f0f;
+}
+.icon-pack4{
+   background-color:; 
+   padding:25px 0; 
+}
+.icon-pack4 ul {
+    display:table;
+    table-layout:fixed;    
+}
+
+.icon-pack4 ul li{
+   list-style-type:none;  
+   padding:5px;   
+   display:table-cell;  
+   text-align:center; 
+}
+
+.icon-pack4 ul li a{
+    display:block;
+    position:relative;
+    width:60px;
+    height:60px;
+    background-color:#f1f1f1;
+    text-align:center;
+    border-radius:50%;  
+    padding:6px;  
+    box-sizing:border-box;
+    text-decoration:none;
+    box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    -moz-box-shadow:0 10px 15px rgba(0,0,0,0.3);  
+    -o-box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    background:-webkit-linear-gradient(0deg,#ccc,#fff);  
+     background:-moz-linear-gradient(0deg,#ccc,#fff);  
+     background:-o-linear-gradient(0deg,#ccc,#fff); 
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack4 ul li a:hover{
+    box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -webkit-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -moz-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -o-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    cursor:pointer;
+}
+.icon-pack4 ul li a .fa{
+    width:100%;
+    height:100%;
+    display:block;
+    border-radius:50%;
+    line-height:calc(60px - 12px);
+    font-size:30px;
+    background:-webkit-linear-gradient(0deg,#ccc,#fff);  
+    background:-moz-linear-gradient(0deg,#ccc,#fff);  
+    background:-o-linear-gradient(0deg,#ccc,#fff);  
+    color:#262626;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack4 ul li:nth-child(1) a:hover .fa{
+    color:#3b5999;
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(2) a:hover .fa{
+    color:#dd4b39;
+   background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(3) a:hover .fa{
+    color:#e4405f;
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(4) a:hover .fa{
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+    color:#55acee;
+}
+   .icon-pack4 ul li:nth-child(5) a:hover .fa{
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+    color:#007bb5;
+}   
+   
+   
+
+.icon-pack2{
+   background-color:;   
+   padding:25px 0;   
+}
+
+.icon-pack2 ul li{
+   list-style-type:none;  
+   padding:8px;
+   display:table-cell ;
+   transform:scale(0.8);  
+   -webkit-transform:scale(0.8);  
+   -moz-transform:scale(0.8);  
+}
+.icon-pack2 ul {
+    display:table;    
+    table-layout:fixed;
+}
+
+.icon-pack2 ul li a .fa {
+    font-size:30px;
+    color:#262626;
+    line-height:45px;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+   
+} 
+.icon-pack2 ul li a {
+    position:relative;
+    margin:0 5px;
+    display:block;
+    width:45px;
+    height:45px; 
+    border-radius:2px 4px 2px 0px;
+    background-color:#eee;
+    text-align:center;
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -webkit-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -moz-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -o-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -o-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+    
+}
+.icon-pack2 ul li a:before{
+    content:"";
+    position:absolute;
+    top:5px;
+    left:-10px;
+    height:100%;
+    width:10px;
+    border-radius:2px 2px 0px 0px;
+    background-color:#b1b1b1;
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewY(-45deg);
+    -moz-transform:rotate(0deg) skewY(-45deg);
+    -o-transform:rotate(0deg) skewY(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack2 ul li a:after{
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    right:5px;
+    height:10px;
+    width:100%;
+    border-radius:2px 2px 2px 0px;
+    background-color:#b1b1b1;
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewX(-45deg);
+    -moz-transform:rotate(0deg) skewX(-45deg);
+    -o-transform:rotate(0deg) skewX(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;  
+}
+
+.icon-pack2 ul li a:hover{
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -webkit-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -moz-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -o-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -moz-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -o-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+
+.icon-pack2 ul li:hover .fa{color:#fff;}
+.icon-pack2 ul li:hover:nth-child(1) a{
+     background-color:#3b5999;}
+.icon-pack2 ul li:hover:nth-child(2) a{
+    background:#dd4b39;}
+.icon-pack2 ul li:hover:nth-child(3) a{
+    background:-webkit-radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(circle farthest-corner at 0 140%, #fec564, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), -webkit-linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); }
+.icon-pack2 ul li:hover:nth-child(4) a{
+    background-color:#55acee;}
+.icon-pack2 ul li:hover:nth-child(5) a{
+    background-color:#007bb5;}    
+
+.icon-pack2 ul li:hover:nth-child(1) a:before{
+     background-color:#2e4a86;}
+.icon-pack2 ul li:hover:nth-child(2) a:before{
+    background:#c13929   }
+.icon-pack2 ul li:hover:nth-child(3) a:before{
+    background-color:#d02d4c;}
+.icon-pack2 ul li:hover:nth-child(4) a:before{
+    background-color:#4184b7;}
+.icon-pack2 ul li:hover:nth-child(5) a:before{
+    background-color:#125688;}
+        
+.icon-pack2 ul li:hover:nth-child(1) a:after{
+     background-color:#4a69ad;}
+.icon-pack2 ul li:hover:nth-child(2) a:after{
+    background:#e8432f  }
+.icon-pack2 ul li:hover:nth-child(3) a:after{
+    background-color:#f1395c;}
+.icon-pack2 ul li:hover:nth-child(4) a:after{
+    background-color:#4d9bde;}
+.icon-pack2 ul li:hover:nth-child(5) a:after{
+    background-color:#55acee;} 
+    html,body {
+  margin: 0;
+  padding: 0;
+}
+.slider {
+  width: 1410px;
+  margin: 2em auto;
+  
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.slide {
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 3s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+  opacity: 1;
+}
+body{
+  background:tomato;
+  font: 300 18px/18px Roboto
+}
+button{
+  color:white;
+  background:#000;
+}
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 96%;
+    padding: 20px;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color:;
+}
+
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: ;
+}
+
+.html {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+ </style>
+  </head>
+  
+<nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html"><h1 style="font-family: 'Asset'; font-size: 22px;">RAJASTHAN <br>TOURISM</h1><img src="6.jpg" class="rounded-circle" height="70" width="70"></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+       <div class="icon-pack4">
+  <ul>
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><span class="fa fa-home fa-bg"></span>Home</a></li>
+      </li>
+      <br>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html"><span class="fa fa-info fa-lg"></span>About Us</a></li>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="media.html"><span class="fa fa-list fa-lg"></span>Media</a></li>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="online.html"><span class="fa fa-address-card fa-lg"></span>Online Booking</a></li>
+      </li>
+      
+      
+<div class="span3" id="contacts-footer">
+                  <div id="block-gtranslate-gtranslate" class="block block-gtranslate">
+
+    
+  <div class="content">
+    <div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en',layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false,includedLanguages: 'en,hi,bn,bh,ar,zh-CN,da ,fr,gu,ja,kn,ko,ml,mr,ne,pa,te'}, 'google_translate_element');
+  }</script><script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  </div>
+</div>
+              </div>
+    </ul>
+  </div>
+
+    </ul>
+  </div> 
+</nav>
+
+  	<div class="slider" id="main-slider"><!-- outermost container element -->
+  <div class="slider-wrapper"><!-- innermost wrapper element -->
+    <img src="2.jpg" alt="First" class="slide"/><!-- slides -->
+    <img src="india.jpg" alt="Second" class="slide"/>
+    <img src="10.jpg" alt="Third" class="slide" />
+    <img src="how.jpg" alt="Fourth" class="slide" />
+    <img src="4.jpg" alt="Fifth" class="slide" />
+  </div>
+</div>  
+    <script type="text/javascript">(function() {
+  
+  function Slideshow( element ) {
+    this.el = document.querySelector( element );
+    this.init();
+  }
+  
+  Slideshow.prototype = {
+    init: function() {
+      this.wrapper = this.el.querySelector( ".slider-wrapper" );
+      this.slides = this.el.querySelectorAll( ".slide" );
+      this.previous = this.el.querySelector( ".slider-previous" );
+      this.next = this.el.querySelector( ".slider-next" );
+      this.index = 0;
+      this.total = this.slides.length;
+      this.timer = null;
+      
+      this.action();
+      this.stopStart(); 
+    },
+    _slideTo: function( slide ) {
+      var currentSlide = this.slides[slide];
+      currentSlide.style.opacity = 1;
+      
+      for( var i = 0; i < this.slides.length; i++ ) {
+        var slide = this.slides[i];
+        if( slide !== currentSlide ) {
+          slide.style.opacity = 0;
+        }
+      }
+    },
+    action: function() {
+      var self = this;
+      self.timer = setInterval(function() {
+        self.index++;
+        if( self.index == self.slides.length ) {
+          self.index = 0;
+        }
+        self._slideTo( self.index );
+        
+      }, 3000);
+    },
+    stopStart: function() {
+      var self = this;
+      self.el.addEventListener( "mouseover", function() {
+        clearInterval( self.timer );
+        self.timer = null;
+        
+      }, false);
+      self.el.addEventListener( "mouseout", function() {
+        self.action();
+        
+      }, false);
+    }
+    
+    
+  };
+  
+  document.addEventListener( "DOMContentLoaded", function() {
+    
+    var slider = new Slideshow( "#main-slider" );
+    
+  });
+  
+  
+})();
+</script>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="video.html">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<button> <p style="font-family: 'Asset'; font-size: 22px;">open</p></button></span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<hr>
+ <center><h1 style="font-family: 'Asset'; font-size: 22px;">Images</h1></center>
+ <hr>
+<div class="row">
+  <div class="column">
+    <img src="1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="6.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="6.jpg" style="width:100%">
+    </div>
+    
+    
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="6.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<hr>
+<div class="container">
+  <img src="tn.jpg" alt="Notebook" style="width:100%;">
+  <div class="content">
+    <h1>Udaipur</h1>
+    <p>Udaipur also known as the "City of Lakes" or the "Kashmir of Rajasthan," is a major city, municipal corporation and the administrative headquarters of the Udaipur district in the Indian state of Rajasthan</p>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <img src="rt.jpg" alt="Notebook" style="width:100%;">
+  <div class="content">
+    <h1>Jodhpur</h1>
+    <p>Jodhpur is the second largest city in the Indian state of Rajasthan and officially the second metropolitan city of the state. It was formerly the seat of a princely state of the same name. The capital of the kingdom was known as Marwar.</p>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="column">
+    <div class="card">
+     <a href="bada.jpg"><img src="bada.jpg" alt="Jane" style="width:100%"></a>
+      <div class="container">
+        <h2>Bada Bagh</h2>
+        <p class="title">Camel and Safari</p>
+        <p>Rajasthan - that one state in India whose charm, vibrancy and the ever colourful culture will never fail to enchant you. Last year when I visited this state of sun n' sand I made Jaisalmer my stop. Having visited that city earlier number of times, I thought what new I can see around and there I was thrown a surprise in front of me - THE BADA BAGH or the Big Garden.</p>
+        <p></p>
+        <a href="https://www.tripoto.com/trip/royal-charm-the-cenotaphs-of-bada-bagh-scattered-expressions-5794ec5063f96"><p><button class="button">Read</button></p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <a href="s.jpg"><img src="s.jpg" alt="Mike" style="width:100%"></a>
+      <div class="container">
+        <h2>Chittor Fort</h2>
+        <p class="title">fORT</p>
+        <p>JAIPUR:Padmaavat" may not be released in Rajasthan tomorrow despite a Supreme Court order, with distributors saying they will not screen the controversial film based on the story of Rajput Queen Padmini, amid massive protests.</p>
+        <a href="https://www.ndtv.com/india-news/amid-padmaavat-protests-chittor-fort-shuts-down-for-2nd-time-in-history-1804023"><p><button class="button">Read</button></p></a>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <a href="ana.jpg"><img src="ana.jpg" alt="John" style="width:100%"></a>
+      <div class="container">
+        <h2>Ana Sagar Lake</h2>
+        <p class="title">Lakh</p>
+        <p>Ana Sagar Lake is an artificial lake situated in the city of Ajmer in Rajasthan state in India. It was built by Arnoraja (alias Ana), the grandfather of Prithviraj Chauhan, in 1135 -1150 AD and is named after him. The catchments were built with the help of local populace. The lake is spread over 13 Kilometers. The Baradari or pavilions were built by Shahjahan in 1637 and Daulat Bagh Gardens by Jehangir.</p>
+        <a href="https://en.wikipedia.org/wiki/Ana_Sagar_Lake"><p><button class="button">Read</button></p></a>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<center><h1 style="font-family: 'Asset'; font-size: 22px;">videos</h1></center>
+<hr>
+<center><video width="820" height="640" controls="controls">
+  <source src="top.mp4" type="video/mp4">
+  <source src="top.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video></center>
+
+<center><video width="820" height="640" controls="controls">
+  <source src="yy.mp4" type="video/mp4">
+  <source src="yy.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video></center>
+<hr>
+<center><h1 style="font-family: 'Asset'; font-size: 22px;">Audios</h1></center>
+<hr>
+
+<center><audio controls>
+  <source src="u.ogg" type="audio/ogg">
+  <source src="u.mp3" type="audio/mpeg">
+Your browser does not support the audio element.</audio></center>
+
+<center><audio controls>
+  <source src="m.ogg" type="audio/ogg">
+  <source src="m.mp3" type="audio/mpeg">
+Your browser does not support the audio element.</audio></center>
+
+  
+<script type="text/javascript">
+
+// PLAYER VARIABLES
+
+var mp3snd = "bbb.mp3";
+
+document.write('<audio autoplay="autoplay">');
+document.write('<source src="'+mp3snd+'" type="audio/mpeg">');
+document.write('<!--[if lt IE 9]>');
+document.write('<bgsound src="'+mp3snd+'" loop="1">');
+document.write('<![endif]-->');
+document.write('</audio>');
+
+</script>
+<br>
+<!-- END SOUND CODE V4.1a -->
+
+</audio>
+<hr>
+<center><h1>Tourist Visiter Graph(2014-2018)</h1></center>
+<hr>
+<p>Jaisalmer</p>
+<div class="container">
+  <div class="skills html">90%</div>
+</div>
+
+<p>Udaipur</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
+
+<p>Jodhpur</p>
+<div class="container">
+  <div class="skills js">65%</div>
+</div>
+
+<p>Ajmer</p>
+<div class="container">
+  <div class="skills php">60%</div>
+</div>
+
+<footer>
+      <hr>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-5 offset-1 col-sm-2">
+            <h5>Links</h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">menu</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
+
+              
+<div class="col-6 col-sm-5">
+  <h5>OUR ADDRESS</h5>
+  <address>
+    <i class="fa fa-phone fa-lg"></i>:77589990866<br>
+    <i class="fa fa-fax fa-lg"></i>:7479497494<br>
+    <i class="fa fa-envelope fa-lg"></i>:<a href="mayankarsingh9@gmail.com">E-mail</a><br>
+
+  </address>
+  <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" href="tel:+7054778848"><i class="fa fa-phone"></i> Call</a>
+                    <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                    <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email</a>
+                </div>
+</div>
+ <div class="col col-sm-4 align-self-center">
+ <div class="icon-pack2">
+  <ul>
+  <div style="text-align:center">
+                        <li><a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook  fa-lg aria-hidden="true"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+                    </div>
+                  </ul>
+                  </div>
+</div>
+<div class="row justify-content-center">
+<div class="col-auto">
+  <p>copyright 2018 Ristorante con Fusion</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://ajak.googleleapis.com/ajak/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+</script>
+  </body>
+</html>

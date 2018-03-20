@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstraptheme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Asset' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+<style>
+.row-header{
+	margin:0px auto;
+	padding:0px auto;
+}
+.row-content{
+	margin:0px auto;
+	padding:50px 0px 50px 0px;
+	border-bottom:1px ridge;
+	min-height:400px;
+}
+.footer{
+	background-color:#9933CC;
+	margin:0px auto;
+	padding:20px 0px 20px 0px;
+}
+.jumbotron{
+	padding:70px 30px 70px 30px;
+	margin:0px auto;
+	background:#9933CC;
+	color:floralwhite;
+}
+.address{
+font-size:80%;
+margin:0px;    
+color:0f0f0f;
+}
+.icon-pack4{
+   background-color:; 
+   padding:25px 0; 
+}
+.icon-pack4 ul {
+    display:table;
+    table-layout:fixed;    
+}
+
+.icon-pack4 ul li{
+   list-style-type:none;  
+   padding:5px;   
+   display:table-cell;  
+   text-align:center; 
+}
+
+.icon-pack4 ul li a{
+    display:block;
+    position:relative;
+    width:60px;
+    height:60px;
+    background-color:#f1f1f1;
+    text-align:center;
+    border-radius:50%;  
+    padding:6px;  
+    box-sizing:border-box;
+    text-decoration:none;
+    box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    -moz-box-shadow:0 10px 15px rgba(0,0,0,0.3);  
+    -o-box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    background:-webkit-linear-gradient(0deg,#ccc,#fff);  
+     background:-moz-linear-gradient(0deg,#ccc,#fff);  
+     background:-o-linear-gradient(0deg,#ccc,#fff); 
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack4 ul li a:hover{
+    box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -webkit-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -moz-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -o-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    cursor:pointer;
+}
+.icon-pack4 ul li a .fa{
+    width:100%;
+    height:100%;
+    display:block;
+    border-radius:50%;
+    line-height:calc(60px - 12px);
+    font-size:30px;
+    background:-webkit-linear-gradient(0deg,#ccc,#fff);  
+    background:-moz-linear-gradient(0deg,#ccc,#fff);  
+    background:-o-linear-gradient(0deg,#ccc,#fff);  
+    color:#262626;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack4 ul li:nth-child(1) a:hover .fa{
+    color:#3b5999;
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(2) a:hover .fa{
+    color:#dd4b39;
+   background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(3) a:hover .fa{
+    color:#e4405f;
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(4) a:hover .fa{
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+    color:#55acee;
+}
+   .icon-pack4 ul li:nth-child(5) a:hover .fa{
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+    color:#007bb5;
+}   
+   
+   
+
+.icon-pack2{
+   background-color:;   
+   padding:25px 0;   
+}
+
+.icon-pack2 ul li{
+   list-style-type:none;  
+   padding:8px;
+   display:table-cell ;
+   transform:scale(0.8);  
+   -webkit-transform:scale(0.8);  
+   -moz-transform:scale(0.8);  
+}
+.icon-pack2 ul {
+    display:table;    
+    table-layout:fixed;
+}
+
+.icon-pack2 ul li a .fa {
+    font-size:30px;
+    color:#262626;
+    line-height:45px;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+   
+} 
+.icon-pack2 ul li a {
+    position:relative;
+    margin:0 5px;
+    display:block;
+    width:45px;
+    height:45px; 
+    border-radius:2px 4px 2px 0px;
+    background-color:#eee;
+    text-align:center;
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -webkit-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -moz-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -o-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -o-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+    
+}
+.icon-pack2 ul li a:before{
+    content:"";
+    position:absolute;
+    top:5px;
+    left:-10px;
+    height:100%;
+    width:10px;
+    border-radius:2px 2px 0px 0px;
+    background-color:#b1b1b1;
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewY(-45deg);
+    -moz-transform:rotate(0deg) skewY(-45deg);
+    -o-transform:rotate(0deg) skewY(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack2 ul li a:after{
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    right:5px;
+    height:10px;
+    width:100%;
+    border-radius:2px 2px 2px 0px;
+    background-color:#b1b1b1;
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewX(-45deg);
+    -moz-transform:rotate(0deg) skewX(-45deg);
+    -o-transform:rotate(0deg) skewX(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;  
+}
+
+.icon-pack2 ul li a:hover{
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -webkit-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -moz-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -o-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -moz-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -o-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+
+.icon-pack2 ul li:hover .fa{color:#fff;}
+.icon-pack2 ul li:hover:nth-child(1) a{
+     background-color:#3b5999;}
+.icon-pack2 ul li:hover:nth-child(2) a{
+    background:#dd4b39;}
+.icon-pack2 ul li:hover:nth-child(3) a{
+    background:-webkit-radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(circle farthest-corner at 0 140%, #fec564, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), -webkit-linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); }
+.icon-pack2 ul li:hover:nth-child(4) a{
+    background-color:#55acee;}
+.icon-pack2 ul li:hover:nth-child(5) a{
+    background-color:#007bb5;}    
+
+.icon-pack2 ul li:hover:nth-child(1) a:before{
+     background-color:#2e4a86;}
+.icon-pack2 ul li:hover:nth-child(2) a:before{
+    background:#c13929   }
+.icon-pack2 ul li:hover:nth-child(3) a:before{
+    background-color:#d02d4c;}
+.icon-pack2 ul li:hover:nth-child(4) a:before{
+    background-color:#4184b7;}
+.icon-pack2 ul li:hover:nth-child(5) a:before{
+    background-color:#125688;}
+        
+.icon-pack2 ul li:hover:nth-child(1) a:after{
+     background-color:#4a69ad;}
+.icon-pack2 ul li:hover:nth-child(2) a:after{
+    background:#e8432f  }
+.icon-pack2 ul li:hover:nth-child(3) a:after{
+    background-color:#f1395c;}
+.icon-pack2 ul li:hover:nth-child(4) a:after{
+    background-color:#4d9bde;}
+.icon-pack2 ul li:hover:nth-child(5) a:after{
+    background-color:#55acee;} 
+ 
+    html,body {
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  color:white;
+  background:#000;
+}
+h6{
+  background:;
+}
+h2{
+  background:;
+}
+raju-info{
+  color:black;
+}
+body{
+  background:tomato;
+  font: 300 18px/18px Roboto
+}
+html,body {
+  margin: 0;
+  padding: 0;
+}
+.slider {
+  width: 1334px;
+  margin: 2em auto;
+  
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.slide {
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 3s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+  opacity: 1;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+   </style> 
+
+  </head>
+  <body>
+
+
+<script type="text/javascript">
+
+// PLAYER VARIABLES
+
+var mp3snd = "cc.mp3";
+
+document.write('<audio autoplay="autoplay">');
+document.write('<source src="'+mp3snd+'" type="audio/mpeg">');
+document.write('<!--[if lt IE 9]>');
+document.write('<bgsound src="'+mp3snd+'" loop="1">');
+document.write('<![endif]-->');
+document.write('</audio>');
+
+</script>
+<br>
+<!-- END SOUND CODE V4.1a -->
+
+</audio>
+
+
+  	<nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html"><h1 style="font-family: 'Asset'; font-size: 22px;">RAJASTHAN <br>TOURISM</h1><img src="6.jpg" class="rounded-circle" height="70" width="70"></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+       <div class="icon-pack4">
+  <ul>
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><span class="fa fa-home fa-bg"></span>Home</a></li>
+      </li>
+      <br>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html"><span class="fa fa-info fa-lg"></span>About Us</a></li>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="media.html"><span class="fa fa-list fa-lg"></span>Media</a></li>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="online.html"><span class="fa fa-address-card fa-lg"></span>Online Booking</a></li>
+      </li>
+      
+      <div class="span3" id="contacts-footer">
+                  <div id="block-gtranslate-gtranslate" class="block block-gtranslate">
+
+    
+  <div class="content">
+    <div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en',layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false,includedLanguages: 'en,hi,bn,bh,ar,zh-CN,da ,fr,gu,ja,kn,ko,ml,mr,ne,pa,te'}, 'google_translate_element');
+  }</script><script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  </div>
+</div>
+              </div>
+    </ul>
+  </div>
+
+    </ul>
+  </div> 
+</nav>
+
+  	<div class="slider" id="main-slider"><!-- outermost container element -->
+  <div class="slider-wrapper"><!-- innermost wrapper element -->
+    <img src="2.jpg" alt="First" class="slide"/><!-- slides -->
+    <img src="india.jpg" alt="Second" class="slide"/>
+    <img src="10.jpg" alt="Third" class="slide" />
+    <img src="how.jpg" alt="Fourth" class="slide" />
+    <img src="4.jpg" alt="Fifth" class="slide" />
+  </div>
+</div>  
+    <script type="text/javascript">(function() {
+  
+  function Slideshow( element ) {
+    this.el = document.querySelector( element );
+    this.init();
+  }
+  
+  Slideshow.prototype = {
+    init: function() {
+      this.wrapper = this.el.querySelector( ".slider-wrapper" );
+      this.slides = this.el.querySelectorAll( ".slide" );
+      this.previous = this.el.querySelector( ".slider-previous" );
+      this.next = this.el.querySelector( ".slider-next" );
+      this.index = 0;
+      this.total = this.slides.length;
+      this.timer = null;
+      
+      this.action();
+      this.stopStart(); 
+    },
+    _slideTo: function( slide ) {
+      var currentSlide = this.slides[slide];
+      currentSlide.style.opacity = 1;
+      
+      for( var i = 0; i < this.slides.length; i++ ) {
+        var slide = this.slides[i];
+        if( slide !== currentSlide ) {
+          slide.style.opacity = 0;
+        }
+      }
+    },
+    action: function() {
+      var self = this;
+      self.timer = setInterval(function() {
+        self.index++;
+        if( self.index == self.slides.length ) {
+          self.index = 0;
+        }
+        self._slideTo( self.index );
+        
+      }, 3000);
+    },
+    stopStart: function() {
+      var self = this;
+      self.el.addEventListener( "mouseover", function() {
+        clearInterval( self.timer );
+        self.timer = null;
+        
+      }, false);
+      self.el.addEventListener( "mouseout", function() {
+        self.action();
+        
+      }, false);
+    }
+    
+    
+  };
+  
+  document.addEventListener( "DOMContentLoaded", function() {
+    
+    var slider = new Slideshow( "#main-slider" );
+    
+  });
+  
+  
+})();
+</script>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="video.html">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<button> <p style="font-family: 'Asset'; font-size: 22px;">open</p></button></span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<marquee><h1 style="font-family: 'Bangers';font-size: 32px;">welcome to rajasthan</h1></marquee>         
+        <marquee><h1 style="font-family: 'Bangers';font-size: 32px;">tourism website</h1></marquee>
+        
+        <div class="background"></div>
+        <ol>
+        
+        </ol>
+      	<div class="container">
+  		<div class="row row-content align-items-center">
+  			<div class="col-sm-4 col-md-6 flex-last">
+  				<h3 style="font-family: 'Asset'; font-size: 22px;">Jaipur Jantar-Mantar</h3>
+          <img src="Jaipur.jpg" class="rounded-circle" height="400" width="400">
+  			</div>
+  			<div class="col-sm col-md flex-first">
+  				<h2 style="font-family: 'Bangers';font-size: 32px;">JAIPUR JANTAR-MANTAR</h2>
+  				<h6 style="font-family: 'Baloo';font-size: 18px;">"Jantar Mantar" these two magical and mysteries words chanting in India by many people in their childhood to fulfill their magical dreams but these words are more than that. The term "Jantar Mantar" literally means "instruments for measuring the harmony of the heavens". In Jaipur city there are palaces, temples, gardens and ponds they all have their importance in their place but the astronomical observatory established by the king Sawai Jai Singh have International importance. The Jantar Mantar houses various architectural and astrological instruments that have caught the interests of astronomers, historians and architects around the world. It is considered to be one of the largest observatories ever built.</h6>
+          <a href="https://en.wikipedia.org/wiki/Jantar_Mantar,_Jaipur"><button>Read More</button></a>
+  			</div>
+        
+  		</div>
+  		<div class="row row-content">
+  			<div class="col-sm-4 col-md-6">
+  				<h3 style="font-family: 'Asset'; font-size: 22px;">Mandore-Gardens-Jodhpur</h3>
+          <img src="mandore.jpg" class="rounded-circle" height="400" width="400">
+  			</div>
+  			<div class="col-sm col-md">
+  				<h2 style="font-family: 'Bangers';font-size: 32px;">MANDORE-GARDENS-JODHPUR</h2>
+  				<h6 style="font-family: 'Baloo';font-size: 18px;">Mandore is an ancient town, and was the seat of the Pratiharas of Mandavyapura, who ruled the region in the 6th century CE. The rulers of this dynasty probably became vassals of the imperial Gurjara-Pratiharas.After the disintegration of the Gurjara-Pratihara empire, one branch of Pratiharas continued to rule at Mandore. In 1395 CE, a princess of this branch married Rao Chunda of Rathore clan. Rao Chunda received the Junagarh fort in Mandore in dowry, and moved his capital to the site. The town remained the Rathore capital until 1459 CE, when Rao Jodha shifted his capital to the newly founded city of Jodhpur.</h6>
+          <a href="https://en.wikipedia.org/wiki/Mandore"><button>Read More</button></a>
+  			</div>
+  		</div>
+      <header class="jumbotron">
+      <div class="container">
+      <div class="row row-content align-items-center">
+        <div class="col-sm-4 col-md-6">
+          <h3></h3>
+          <img src="8.jpg" class="rounded-circle" height="300" width="300">
+        </div>
+        <div class="col-sm col-md">
+          <h2 style="font-family: 'Bangers';font-size: 32px; color:black; background:none"> Vasundhara Raje</h2>
+          <h4 style="font-family: 'Bangers';font-size: 32px;color: black;">Cheif Minister Of Rajasthan</h4>
+          <br>
+          <h5 style="font-family: 'Baloo';font-size: 20px;">Vasundhara Raje Scindia (born 8 March 1953), commonly referred to as Vasundhara Raje, is an Indian politician who is the current and 13th Chief Minister of Rajasthan since 2013; previously she served in the same post from 2003 to 2008. She was the first female Chief Minister of Rajasthan . Vasundhara Raje was born on 8 March 1953 in Mumbai. She is daughter of Vijayaraje Scindia and Jivajirao Scindia, Maharaja of Gwalior, members of the prominent Scindia royal Maratha family.[2] She completed her school education from Presentation Convent, Kodaikanal, Tamil Nadu, and later graduated with Economics and Political Science degrees (Hons.) from Sophia College, affiliated to Mumbai University, Mumbai.</h5>
+<a href="https://en.wikipedia.org/wiki/Vasundhara_Raje"><button>Read More</button></a>
+        </div>
+    </header>
+
+  		<div class="row row-content">
+  			<div class="col-sm-4 col-md-6 flex-last">
+  				<h3 style="font-family: 'Asset'; font-size: 22px;">The Oberoi Udaivilas,Udaipur</h3>
+          <img src="udaipur.jpg" class="rounded-circle" height="400" width="400">
+  			</div>
+  			<div class="col-sm col-md flex-first">
+  				<h2 style="font-family: 'Bangers';font-size: 32px;">THE OBEROI UDAIVILAS,UDAIPUR</h2>
+  				<h6 style="font-family: 'Baloo';font-size: 18px;">The Oberoi Udaivilas is a luxury hotel located in Udaipur, Rajasthan, India. It was rated as the world's best hotel in 2015 by Travel + Leisure.
+The hotel was constructed on the hunting grounds of the Maharana of Mewar, which was around 200 years old. Around 40 percent of the total hotel area are designated a wildlife sanctuary.The beauty of Udaipur never ceases to impress the world outside, be it the pristine lakes, majestic havelis or grand royalty.
+This time, making its mark is the Oberoi Udaivilas, Udaipur which has been ranked as number 1 in the list of World’s Best 100 Hotels by Travel + Leisure Lifestyle Magazine.The exemplary Udaivilas is renowned in the world for its traditional architecture infused with modern facilities, exquisite hospitality, rejuvenating Spa and treating guests with royalty. With another recognition from an international magazine, the hotel has raised the bar in luxury, yet again.</h6>
+<a href="https://en.wikipedia.org/wiki/The_Oberoi_Udaivilas"><button>Read More</button></a>
+  			</div>
+  		</div>
+  	</div>
+
+    
+      </div><div class="container">
+      <div class="row row-content align-items-center">
+        <div class="col-sm-4 col-md-6">
+          <h3 style="font-family: 'Asset'; font-size: 22px;">Jaisalmer Thar-Desert</h3>
+          <img src="jaisalmer.jpg" class="rounded-circle" height="400" width="400">
+        </div>
+        <div class="col-sm col-md">
+          <h2 style="font-family: 'Bangers';font-size: 32px;">JAISALMER THAR-DESERT</h2>
+          <h6 style="font-family: 'Baloo';font-size: 18px;">The Thar Desert, also known as the Great Indian Desert, is a large arid region in the northwestern part of the Indian subcontinent that covers an area of 200,000 km2 (77,000 sq mi) and forms a natural boundary between India and Pakistan. It is the world's 18th largest desert, and the world's 9th largest subtropical desert.About 85% of the Thar Desert is located within India, with the remaining 15% in Pakistan.In India, it covers about 170,000 km2 (66,000 sq mi), and the remaining 30,000 km2 (12,000 sq mi) of the desert is within Pakistan.The Thar desert forms approximately 10% of the total geographic area of India. More than 60% of the desert lies in the state of Rajasthan, and extends into Gujarat, Punjab, and Haryana. The desert comprises a very dry part, the Marusthali region in the west, and a semidesert region in the east with fewer sand dunes and slightly more precipitation.</h6>
+<a href="https://en.wikipedia.org/wiki/Thar_Desert"><button>Read More</button></a>
+        </div>
+    
+  	<footer>
+      <hr>
+      <hr>
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-5 offset-1 col-sm-2">
+  					<h5>Links</h5>
+  					<ul>
+  						<li><a href="#">Home</a></li>
+  						<li><a href="#">about</a></li>
+  						<li><a href="#">menu</a></li>
+  						<li><a href="#">contact</a></li>
+
+
+  					</ul>
+  				</div>
+
+  						
+<div class="col-6 col-sm-5">
+	<h5></h5>
+	<address>
+		<br>
+		<i class="fa fa-phone fa-lg"></i>:77589990866<br>
+    <i class="fa fa-fax fa-lg"></i>:7479497494<br>
+    <i class="fa fa-envelope fa-lg"></i>:<a href="mayankarsingh9@gmail.com">E-mail</a><br>
+
+	</address>
+  <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" href="tel:+7054778848"><i class="fa fa-phone"></i> Call</a>
+                    <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                    <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email</a>
+                </div>
+</div>
+ <div class="col col-sm-4 align-self-center">
+ <div class="icon-pack2">
+  <ul>
+  <div style="text-align:center">
+                        <li><a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook  fa-lg aria-hidden="true"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+                    </div>
+                  </ul>
+                  </div>
+</div>
+<div class="row justify-content-center">
+<div class="col-auto">
+  <p>copyright 2018 Ristorante con Fusion</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://ajak.googleleapis.com/ajak/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+</script>
+	</body>
+</html>

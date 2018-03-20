@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstraptheme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Asset' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+     <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <style>
+    .row-header{
+    margin:0px auto;
+    padding:0px auto;
+}
+.row-content{
+    margin:0px auto;
+    padding:50px 0px 50px 0px;
+    border-bottom:1px ridge;
+    min-height:400px;
+}
+.footer{
+    background-color:#9933CC;
+    margin:0px auto;
+    padding:20px 0px 20px 0px;
+}
+.jumbotron{
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background:#9933CC;
+    color:floralwhite;
+}
+.address{
+font-size:80%;
+margin:0px;    
+color:0f0f0f;
+}
+.icon-pack4{
+   background-color:; 
+   padding:25px 0; 
+}
+.icon-pack4 ul {
+    display:table;
+    table-layout:fixed;    
+}
+
+.icon-pack4 ul li{
+   list-style-type:none;  
+   padding:5px;   
+   display:table-cell;  
+   text-align:center; 
+}
+
+.icon-pack4 ul li a{
+    display:block;
+    position:relative;
+    width:60px;
+    height:60px;
+    background-color:#f1f1f1;
+    text-align:center;
+    border-radius:50%;  
+    padding:6px;  
+    box-sizing:border-box;
+    text-decoration:none;
+    box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    -moz-box-shadow:0 10px 15px rgba(0,0,0,0.3);  
+    -o-box-shadow:0 10px 15px rgba(0,0,0,0.3);
+    background:-webkit-linear-gradient(0deg,#ccc,#fff);  
+     background:-moz-linear-gradient(0deg,#ccc,#fff);  
+     background:-o-linear-gradient(0deg,#ccc,#fff); 
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack4 ul li a:hover{
+    box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -webkit-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -moz-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    -o-box-shadow:0 2px 5px rgba(0,0,0,.3);
+    cursor:pointer;
+}
+.icon-pack4 ul li a .fa{
+    width:100%;
+    height:100%;
+    display:block;
+    border-radius:50%;
+    line-height:calc(60px - 12px);
+    font-size:30px;
+    background:-webkit-linear-gradient(0deg,#ccc,#fff);  
+    background:-moz-linear-gradient(0deg,#ccc,#fff);  
+    background:-o-linear-gradient(0deg,#ccc,#fff);  
+    color:#262626;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack4 ul li:nth-child(1) a:hover .fa{
+    color:#3b5999;
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(2) a:hover .fa{
+    color:#dd4b39;
+   background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(3) a:hover .fa{
+    color:#e4405f;
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+}
+.icon-pack4 ul li:nth-child(4) a:hover .fa{
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+    color:#55acee;
+}
+   .icon-pack4 ul li:nth-child(5) a:hover .fa{
+    background:-webkit-linear-gradient(0deg,#fff,#ddd); 
+    background:-moz-linear-gradient(0deg,#fff,#ddd);
+    background:-o-linear-gradient(0deg,#fff,#ddd);  
+    color:#007bb5;
+}   
+
+.icon-pack2{
+   background-color:;   
+   padding:25px 0;   
+}
+
+.icon-pack2 ul li{
+   list-style-type:none;  
+   padding:8px;
+   display:table-cell ;
+   transform:scale(0.8);  
+   -webkit-transform:scale(0.8);  
+   -moz-transform:scale(0.8);  
+}
+.icon-pack2 ul {
+    display:table;    
+    table-layout:fixed;
+}
+
+.icon-pack2 ul li a .fa {
+    font-size:30px;
+    color:#262626;
+    line-height:45px;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+   
+} 
+.icon-pack2 ul li a {
+    position:relative;
+    margin:0 5px;
+    display:block;
+    width:45px;
+    height:45px; 
+    border-radius:2px 4px 2px 0px;
+    background-color:#eee;
+    text-align:center;
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -webkit-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -moz-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    -o-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -o-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+    
+}
+.icon-pack2 ul li a:before{
+    content:"";
+    position:absolute;
+    top:5px;
+    left:-10px;
+    height:100%;
+    width:10px;
+    border-radius:2px 2px 0px 0px;
+    background-color:#b1b1b1;
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewY(-45deg);
+    -moz-transform:rotate(0deg) skewY(-45deg);
+    -o-transform:rotate(0deg) skewY(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+.icon-pack2 ul li a:after{
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    right:5px;
+    height:10px;
+    width:100%;
+    border-radius:2px 2px 2px 0px;
+    background-color:#b1b1b1;
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewX(-45deg);
+    -moz-transform:rotate(0deg) skewX(-45deg);
+    -o-transform:rotate(0deg) skewX(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;  
+}
+
+.icon-pack2 ul li a:hover{
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -webkit-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -moz-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    -o-transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -moz-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -o-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+
+.icon-pack2 ul li:hover .fa{color:#fff;}
+.icon-pack2 ul li:hover:nth-child(1) a{
+     background-color:#3b5999;}
+.icon-pack2 ul li:hover:nth-child(2) a{
+    background:#dd4b39;}
+.icon-pack2 ul li:hover:nth-child(3) a{
+    background:-webkit-radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(circle farthest-corner at 0 140%, #fec564, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), -webkit-linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, rgba(0, 0, 0, 0)), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); }
+.icon-pack2 ul li:hover:nth-child(4) a{
+    background-color:#55acee;}
+.icon-pack2 ul li:hover:nth-child(5) a{
+    background-color:#007bb5;}    
+
+.icon-pack2 ul li:hover:nth-child(1) a:before{
+     background-color:#2e4a86;}
+.icon-pack2 ul li:hover:nth-child(2) a:before{
+    background:#c13929   }
+.icon-pack2 ul li:hover:nth-child(3) a:before{
+    background-color:#d02d4c;}
+.icon-pack2 ul li:hover:nth-child(4) a:before{
+    background-color:#4184b7;}
+.icon-pack2 ul li:hover:nth-child(5) a:before{
+    background-color:#125688;}
+        
+.icon-pack2 ul li:hover:nth-child(1) a:after{
+     background-color:#4a69ad;}
+.icon-pack2 ul li:hover:nth-child(2) a:after{
+    background:#e8432f  }
+.icon-pack2 ul li:hover:nth-child(3) a:after{
+    background-color:#f1395c;}
+.icon-pack2 ul li:hover:nth-child(4) a:after{
+    background-color:#4d9bde;}
+.icon-pack2 ul li:hover:nth-child(5) a:after{
+    background-color:#55acee;} 
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+body{
+  background:teal;
+}
+button{
+  color:white;
+  background:#000;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html"><h1 style="font-family: 'Asset'; font-size: 22px;">RAJASTHAN <br>TOURISM</h1><img src="D:\sublime project\6.jpg" class="rounded-circle" height="70" width="70"></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+       <div class="icon-pack4">
+  <ul>
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><span class="fa fa-home fa-bg"></span>Home</a></li>
+      </li>
+      <br>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html"><span class="fa fa-info fa-lg"></span>About Us</a></li>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="mmedia.html"><span class="fa fa-list fa-lg"></span>Media</a></li>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.us"><span class="fa fa-address-card fa-lg"></span>Online Booking</a></li>
+      </li>
+      
+<div class="span3" id="contacts-footer">
+                  <div id="block-gtranslate-gtranslate" class="block block-gtranslate">
+
+    
+  <div class="content">
+    <div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en',layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false,includedLanguages: 'en,hi,bn,bh,ar,zh-CN,da ,fr,gu,ja,kn,ko,ml,mr,ne,pa,te'}, 'google_translate_element');
+  }</script><script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  </div>
+</div>
+              </div>
+      
+    </ul>
+  </div>
+
+    </ul>
+  </div> 
+</nav>
+
+    
+</script>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="about.html">About</a>
+    <a href="video.html">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<span style="font-size:;cursor:pointer" onclick="openNav()">&#9776;<button> <p style="font-family: 'Asset'; font-size: 22px;">open</p></button></span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+} 
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<form id="booking-form" class="booking-form" name="form1" method="post" action="">
+            <div><center><img src="D:\sublime project\jodhpur.jpg" class="rounded-circle" height="350" width="350"></center></div>
+            <div><center><h1 style="font-family: 'Asset'; font-size: 32px;">Hotel Reservation Form</h1></center></div>
+            <div id="form-message" class="message hide">
+                
+            </div>
+            <div id="form-content">
+                <div class="group">
+                    <label for="date-from"><h4>From</h4></label>
+                    <div class="addon-right">
+                        <input id="date-from" name="date-from" class="form-control" type="text">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="date-to"><h4>To</h4></label>
+                    <div class="addon-right">
+                        <input id="date-to" name="date-to" class="form-control" type="text">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="room-type"><h4>Room type</h4></label>
+                    <div>
+                        <select id="room-type" name="room-type" class="form-control">
+                            <option value="Single room">Single room</option>
+                            <option value="Double room">Double room</option>
+                            <option value="Apartment">Apartment</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="group">
+                    <label for="room-requirements"><h4>Room requirements</h4></label>
+                    <div>
+                        <select id="room-requirements" name="room-requirements" class="form-control">
+                            <option value="No Preference">No Preference</option>
+                            <option value="Non Smoking">Non Smoking</option>
+                            <option value="Smoking">Smoking</option>
+                        </select>
+                    </div>
+                </div>
+
+             
+                
+                
+                <div class="group">
+                    <label for="adults"><h4>Adults</h4></label>
+                    <div>
+                        <select id="adults" name="adults" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="children"><h4>Children</h4></label>
+                    <div>
+                        <select id="children" name="children" class="form-control">
+                            <option value="-">-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="group">
+                    <label for="name"><h4>Name</h4></label>
+                    <div><input id="name" name="name" class="form-control" type="text" placeholder="Name"></div>
+                </div>
+                <div class="group">
+                    <label for="email"><h4>Email</h4></label>
+                    <div><input id="email" name="email" class="form-control" type="email" placeholder="Email"></div>
+                </div>
+                <div class="group">
+                    <label for="phone"><h4>Phone</h4></label>
+                    <div><input id="phone" name="phone" class="form-control" type="text" placeholder="Phone"></div>
+                </div>
+                <div class="group">
+                    <label for="special-requirements"><h4>Special requirements</h4></label>
+                    <div><textarea id="special-requirements" name="special-requirements" class="form-control" cols="" rows="5" placeholder="Special requirements"></textarea></div>
+                </div>
+                <div class="group submit">
+                    <label class="empty"></label>
+                    <div><input name="submit" type="submit" value="Submit"/></div>
+                </div>
+            </div>
+            <div id="form-loading" class="hide"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+        </form>
+        <footer>
+      <hr>
+      <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-5 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+
+                        
+<div class="col-6 col-sm-5">
+    <h5></h5>
+    <address>
+        
+        <i class="fa fa-phone fa-lg"></i>:77589990866<br>
+    <i class="fa fa-fax fa-lg"></i>:7479497494<br>
+    <i class="fa fa-envelope fa-lg"></i>:<a href="mayankarsingh9@gmail.com">E-mail</a><br>
+
+    </address>
+  <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" href="tel:+7054778848"><i class="fa fa-phone"></i> Call</a>
+                    <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                    <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email</a>
+                </div>
+</div>
+ <div class="col col-sm-4 align-self-center">
+ <div class="icon-pack2">
+  <ul>
+  <div style="text-align:center">
+                        <li><a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook  fa-lg aria-hidden="true"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a></li>
+                        <li><a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+                    </div>
+                  </ul>
+                  </div>
+</div>
+<div class="row justify-content-center">
+<div class="col-auto">
+  <p>copyright 2018 Ristorante con Fusion</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://ajak.googleleapis.com/ajak/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>     
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
